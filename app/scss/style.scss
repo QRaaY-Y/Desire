@@ -1,0 +1,149 @@
+@import 'global';
+@import 'reset';
+@import 'vars';
+
+//header Start
+.header{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+    }
+    &__btn{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.logo{
+    margin: 0 auto;
+}
+
+.menu{
+    padding-left: 35px;
+    padding-right: 60px;
+    &__list{
+        display: flex;
+    }
+    &__list-item + &__list-item{
+        padding-left: 80px;
+    }
+
+    &__list-link{
+        @extend %title-fonts;
+        color: $black;
+        opacity: 0.9;
+        line-height: 22px;
+    }
+}
+//header End
+
+
+//footer Start
+.footer{
+    &__content{
+        background-color: #DFDFDF;
+        padding: 60px 0 80px;
+    }
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    &__contact{
+        width: 540px;
+    }
+    &__contact-title{
+        color:$black;
+        @extend %title-fonts;
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 14px;
+    }
+
+    &__contact-text{
+        max-width: 475px;
+        line-height: 27px;
+        margin-bottom: 16px;
+    }
+
+    &__contact-email{
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        color:$black;
+        margin-bottom: 22px;
+    }
+
+    &__form{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__form-input{
+    width: 368px;
+    height: 40px;
+    opacity: 0.7;
+    border: 1px solid #383636;
+    box-sizing: border-box;
+    border-radius: 21px;
+    background-color: transparent;
+    padding-left: 15px;
+
+    &::placeholder{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    }
+
+    &__form-btn{
+        background:$black;
+        color:#FFFFF0;
+        width: 170px;
+        height: 40px;
+        border-radius: 21px;
+        border: none;
+        font-weight: 600;
+    }
+
+    &__social{
+        margin-left: 99px;
+        margin-right: 176px;
+    }
+
+    &__social-item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 14px;
+    }
+
+    &__social-item>img{
+        height: 18px;
+        width: 27px;
+    }
+
+    &__social-link,
+    &__menu-link{
+        color: #707070;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        margin-left: 14px;
+        
+    }
+    
+    &__menu-item{
+        margin-bottom: 15px;
+    }
+
+    &__copyrigth{
+        background-color: $black;
+        color: #A1A1A1;
+        text-align: center;
+        padding: 42px 10px 41px;
+    }
+}
+//footer End

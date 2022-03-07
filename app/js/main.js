@@ -4,5 +4,12 @@ $(function (){
     })
     $('.rigthside-menu__close').on('click', function(){
         $('.rigthside-menu').addClass('rigthside-menu--close');
-    })
+    });
+
+    $('.top__slider').slick({
+        dots: true,
+        arrows:false,
+        fade:true,
+        autoplay:true
+    });
 })

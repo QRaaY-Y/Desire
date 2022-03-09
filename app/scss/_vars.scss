@@ -6,3 +6,9 @@ $defult: #5a5a5a;
     font-weight: 700;
 }
 
+@function max($numbers...) {
+ @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+ @return m#{i}n(#{$numbers});
+}

@@ -125,8 +125,10 @@
 //breadcrumbs
 
 .breadcrumbs{
+    position: relative;
     background: rgba(#DFDFDF, .5);
     padding: 13px 14px;
+    z-index: 999;
     &__list{
         display: flex;
     }
@@ -172,14 +174,6 @@
         max-width: 475px;
         line-height: 27px;
         margin-bottom: 16px;
-    }
-
-    &__contact-email{
-        display: inline-block;
-        font-size: 14px;
-        font-weight: 600;
-        color:$black;
-        margin-bottom: 22px;
     }
 
     &__form{
@@ -736,5 +730,46 @@
     }
     &__item{
         margin: 0 auto;
+    }
+}
+.map{
+    margin-top: -53px;
+    margin-bottom: 50px;
+}
+
+.contact{
+    padding-bottom: 100px;
+    &__title{
+        color: $black;
+        @extend %title-fonts;
+        font-size: 36px;
+        line-height: 60px;
+        position: relative;
+        padding-bottom: 35px;
+        margin-bottom: 40px;
+        &::after{
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 200px;
+            left: 0;
+            bottom:0;
+            background-color: #6D7278;
+        }
+    }
+    .contact__social-list{
+        padding-left: 284px;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__social-item + .contact__social-item{
+        padding-left: 40px;
+    }
+
+    &__box{
+        padding-left: 284px;    
+    }
+    &__form{
+        padding-left: 284px;
     }
 }
